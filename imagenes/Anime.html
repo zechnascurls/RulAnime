@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RulAnime</title>
+        <meta charset="utf=8">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <style type="text/css">                  
+
+         .contenedor 
+         {                       
+         position: absolute;
+         border-radius: 15px;
+         height: 94px;
+         width: 167px;
+         margin: 0px 135px;     
+         z-index: 2;       
+        }
+         .contenedor img 
+        {    
+         position: absolute;
+         border-radius: 15px;
+         filter: blur(0.1px);
+         height: 94px;
+         width: 167PX;
+         left: 1;
+         transition: opacity 2s ease-in-out;   
+         z-index: 1;     
+         
+        }
+         .contenedor img.top:hover
+        {
+         opacity: 40%;
+        }
+         #topbar 
+        {
+             border-radius: 15px;
+             width: 80%;             
+             background-color: #514E5F;
+             height: 94px;                
+             font-family: 'Pacifico', cursive;
+             position: relative;
+             text-align: center;
+             font-size: 300%;
+             margin: 0px auto;          
+             z-index: 1;                  
+        }
+         #topbarup
+         {
+             width: 100%;
+             margin: 0 auto;
+             background-color: white;
+             height: 20px;
+         }
+         body 
+        {
+             background-color: #ffdd90;
+             background-image: url(https://images6.alphacoders.com/890/thumb-1920-890293.jpg);
+             background-size: 108% 120%;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             margin: 0;
+             padding: 0;
+             font-family: Rubik,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        #titulo 
+        {
+            font-family: 'Pacifico', cursive;
+            position: fixed;
+            text-align: center;
+            font-size: 300%;
+            margin-top: 0.5px;            
+        }
+        #fandom
+        {
+            width: ;
+            height: 20px;
+            float: left;
+            padding-right: 114px;
+        }
+        #Sign-in 
+        {
+            width: ;
+            height: 20px; 
+            margin-left: 10px;
+        }
+        .Logosign 
+        {
+            float: left;
+            border-left: 2px gray solid;
+            height: 100%;
+            margin-left: 5px;         
+        }
+        #Sign-in-texto
+        {
+            font-weight: bold;
+            font-size: 80%;
+            position: relative;
+            top: -5px;
+            padding-right: 45px;
+            
+            
+        }
+        .topbarmenu
+        {
+            font-weight: bold;
+            font-size: 85%;
+            padding: 3px 10px 0px 10px;
+            height: 17px;   
+            float: right;            
+        }
+        #explora 
+        {
+            float: left;
+            margin-right: 5px;
+        }
+        #foro 
+        {
+            float: left;
+            margin-right: 5px;
+            margin-top: 1px;
+        }
+        a 
+        {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            
+            color: blue;
+        
+        }       
+        
+        #search-box
+        {
+            background-color: #434053;                  
+            font-weight: bold;
+            font-size: 14px;
+            width: 150px;
+            height: 14px;
+            float: left;
+            margin-top: -3px;
+            padding-right: ;
+        }
+        #lupa
+        {
+            margin-top: -1px;
+            margin-left: 10px;
+        }
+        #tabla
+        {
+            font-weight:bold
+        }
+        #page-container
+        {
+             border-radius: 15px;
+             width: 80%;             
+             background-color: rgb(252, 248, 248);
+             height: 1500px;                
+             position: relative;
+             margin: -14px auto;
+        }
+        #rem
+        {
+            font-weight: bold;            
+            font-size: 50px;            
+            text-align: left;
+        }
+        #p a:hover
+        {
+            color: teal;
+        }
+        .cita
+        {
+            font-style: italic;
+            text-align: center;
+            margin: 100px 290px 1px 30px
+        }
+        .imagenrem
+        {
+            margin: -205px 0px 0px 590px
+                      
+        }
+        h4
+        {
+            background-color: #403D50;
+            width: 272px;
+            height: 25px;
+            text-align: center;
+            color: white;
+            padding-top: 8px;
+            margin: -5px 10px 10px 590px;
+            
+        }
+        .inforem
+        {
+            margin-left: 590px;
+            margin-top: -10px;
+            text-align: left;
+            background-color: #EDF8FA;
+            padding: 1px;            
+            width: 272px;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+        tr
+        {
+            background-color: #EDF8FA;
+            border-left: #403D52 solid 1px;
+            border-right: #403D52 solid 1px;
+        }
+        tr:hover
+        {
+            background-color: white;
+            border: #403D52 solid 1px;
+        }
+        .primer-parrafo
+        {
+            text-align: left;
+            margin: -500px 500px 1px 30px
+            
+            
+        }
+        .segundo-parrafo
+        {
+            text-align: left;
+            margin: 10px 500px 1px 30px
+            
+            
+        }
+      
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="topbarup">
+            <a href="https://www.fandom.com/explore-es?uselang=es" target="_blank"><img id= "fandom" src="D:\Curso de desarrollo web completo\imagenes\Descargas\fandom.png"></a>
+
+            <div id="Sign-in" class="Logosign">
+                <img id= "Sign-in" src="D:\Curso de desarrollo web completo\imagenes\Descargas\sign.png">
+                <a href="https://www.fandom.com/signin?uselang=es&redirect=https%3A%2F%2Frezero.fandom.com%2Fes%2Fwiki%2FBlog%3AEntradas_recientes"><span id="Sign-in-texto">Entrar</span></a>
+            </div>
+
+            <div class="Logosign topbarmenu">
+                <a style="" href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Medios" target="_blank"> Medios</a>
+            </div>
+            
+            <div class="Logosign topbarmenu">                
+                <a href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Personajes" target="_blank"> Personajes</a>
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Cronolog%C3%ADa" target="_blank"> Cronologia</a>
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Blog:Entradas_recientes" target="_blank"> Entradas Recientes</a>
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Especial:V%C3%ADdeos" target="_blank"> Videos</a>
+                <img id="explora" src="D:\Curso de desarrollo web completo\imagenes\recortes\explora.png">
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Especial:Foro" target="_blank"> Foro</a>
+                <img id="foro" src="D:\Curso de desarrollo web completo\imagenes\recortes\FORO.png">
+            </div>
+
+            <div class="logosing topbarmenu">
+                <input type="text" id="search-box" value="search">
+                <input type="image" id="lupa" src="D:\Curso de desarrollo web completo\imagenes\recortes\lupa.png">
+            </div>
+        </div>
+
+
+
+        
+        <div class="contenedor">
+            <a href="https://rezero.fandom.com/es/wiki/Rem" target="_blank"> <img src="D:\Curso de desarrollo web completo\imagenes\Descargas\Wiki.png"/> 
+            <img class="top" src="https://vignette.wikia.nocookie.net/rezero/images/e/ea/Rem_motivando_a_Subaru.gif/revision/latest?cb=20170809212028&path-prefix=es" />
+        </a>
+        
+        </div>
+        <h1 id="topbar"><strong>RulAnime</strong></h1>
+
+        <div class="clear"></div>
+
+        <div id="page-container">
+            <div id="main-article">
+                <div id="titulorem">
+                    
+                    
+                    <p style="padding-left: 33px; padding-top: 20px; margin-bottom: -40px; color: rgb(12, 236, 12);">en: <a style="color: rgb(12, 236, 12); text-decoration: underline;" href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Personajes" target="_blank"> personajes</a>, <a style="color: rgb(12, 236, 12); text-decoration: underline;" href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Personajes_femeninos" target="_blank">personajes femeninos</a>, <a style="color: rgb(12, 236, 12); text-decoration: underline;" href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Onis" target="_blank">onis</a> y <a href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Provenientes_del_Reino_de_Lugunica" style="color:rgb(12, 236, 12); text-decoration: underline" target="_blank"> 5 más..</a></p>
+                    
+
+                <h2 id="rem" style="padding-top: px; padding-left: 30px;">Rem.</h2>
+
+                <hr style="margin-top: -25px; width: 1010px;">
+
+                <table style="justify-content: center; margin-left: 30px; font-weight: bold;">
+                    <tr>
+                        <td style="border: rgb(216, 205, 205); padding: 8px; background:#514E5F; border-style: solid; border-radius: 5px; color: white;">Informacíon.</td>
+                        <td style="border: rgb(216, 205, 205); padding: 8px; background:white; border-style: solid; border-radius: 5px; color: rgb(12, 236, 12)">Relaciones.</td>
+                        <td style="border: rgb(216, 205, 205); padding: 8px; background:white; border-style: solid; border-radius: 5px; color: rgb(12, 236, 12)">Galeria.</td>
+                    </tr>
+                    
+                </table>
+                <table style="justify-content: center; margin-left: 596px; margin-top: -117px; font-weight: bold;">
+                    <tr>
+                        <td style="border: rgb(216, 205, 205); padding: 7px; padding-left: 20px; padding-right: 20px; background:#BF9E99; border-style: solid; border-radius: 5px; color: white;"><a style="color: white;" href="https://rezero.fandom.com/es/wiki/Rem?action=edit" target="_blank"> Ver fuentes</a></td>
+                        <td style="border: rgb(216, 205, 205); padding: 7px; padding-left: 20px; padding-right: 20px; background:white; border-style: solid; border-radius: 5px;"><a href="https://rezero.fandom.com/es/wiki/Rem#WikiaArticleComments" target="_blank"> Comentarios (102)</a></td>
+                        <td style="border: rgb(216, 205, 205); padding: 7px; padding-left: 20px; padding-right: 20px; background:white; border-style: solid; border-radius: 5px;">Compartir</td>
+                    </tr>
+                </table>
+                
+                </div>
+                <div class="cita">
+                    <p class="cita">
+                        "Mi tiempo se había detenido hace mucho. Desde esa noche, cuando perdí todo menos a mi hermana, mi tiempo se detuvo. Tú derretiste mi corazón congelado e hiciste que mi tiempo volviera a moverse. Seguro que no sabes hasta qué punto me salvaste o lo feliz que fui en ese momento. Por eso lo sé. No importa lo doloroso que sea todo, incluso cuando creas que vas a perder. Cuando nadie más en el mundo crea en ti, cuando ni siquiera tú creas en ti mismo... yo creeré... que el Subaru que me salvó es un verdadero héroe."
+                        ―Rem a Subaru Natsuki
+                                           
+
+
+                </div>
+                <div class="imagenrem">
+                    <img style="width: 270px; border: #403D52 solid 1px;" src="https://vignette.wikia.nocookie.net/rezero/images/b/b4/Rem_-_Anime.png/revision/latest/scale-to-width-down/350?cb=20161116222258&path-prefix=es">
+                </div>
+
+                <div>
+                    <table class="inforem">
+                        <h4>Rem</h4>
+                        <tr>
+                            <td>Nombre</td>                            
+                            <td>Rem</td>
+                        </tr>
+                        <tr>
+                            <td>Kanji</td>
+                            <td>レム</td>
+                        </tr>
+                        <tr>
+                            <td>Rōmaji</td>
+                            <td>Remu</td>
+                        </tr>
+                    </table>
+                    <table class="inforem">
+                        <h4>Informacion.</h4>
+                        <tr>
+                            <td>Especie</td>
+                            <td>Oni</td>
+                        </tr>
+                        <tr>
+                            <td>Género</td>
+                            <td>Femenino</td>
+                        </tr>
+                        <tr>
+                            <td>Cumpleaños</td>
+                            <td>2 de febrero</td>
+                        </tr>
+                        <tr>
+                            <td>Edad</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>Altura</td>
+                            <td>154 cm <small><top>(5'1")</top></small></td>
+                        </tr>
+                        <tr>
+                            <td>Ojos</td>
+                            <td>Azul cielo</td>
+                        </tr>
+                        <tr>
+                            <td>Cabello</td>
+                            <td>Azul claro</td>
+                        </tr>
+                        <tr>
+                            <td>Familiares</td>
+                            <td><small>Quark (padre)</small></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><small>Temae (madre)</small></td>                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><small>Ram (hermana gemela)</small></td>                            
+                        </tr>
+                    </table>
+                    <table class="inforem">
+                        <h4>Estatus profesional</h4>
+                        <tr>
+                            <td>Afiliación</td>
+                            <td>Reino de Lugunica</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Campaña de Emilia</td>                            
+                        </tr>
+                        <tr>
+                            <td>Ocupación</td>
+                            <td>Criada de Roswaal L. Mathers</td>
+                        </tr>
+                        <tr>
+                            <td>Estatus</td>
+                            <td>Viva</td>
+                        </tr>
+                    </table>
+                    <p class="primer-parrafo">
+                        Rem (レム, Remu) es la segunda protagonista femenina de Re:Zero solo hasta el Tercer Arco. Es la hermana gemela de Ram, con quien sobrevivió de un ataque del Culto de la Bruja, y después trabajaron de criadas para Roswaal. Cuando Emilia trajo a Subaru, Rem pensó que era un espía del culto, pero al ver como se arriesgaba para salvar al pueblo Irlam de los Wolgarms, y ver como se preocupaba por ella, terminó enamorándose de él.
+                    </p>
+                    <p class="segundo-parrafo">
+                        Eventualmente, Rem acompañó a Subaru en los territorios de Karsten. Ella lo ayudó a formar una alianza con Crusch y Anastasia, de modo que vencieron a Hakugei. Como resultado, Rem resultó herida, por lo que se despidió de Subaru antes de volver a la capital. En el camino, aparecieron Regulus y Ley, este último consumió a Rem, borrándola de la existencia y dejándola en estado de coma.
+                          
+                    </p>
+                   
+
+
+
+
+
+                </div>
+
+                
+
+
+
+
+        </div>
+                
+        
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

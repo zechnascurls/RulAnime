@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RulAnime</title>
+        <meta charset="utf=8">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <style type="text/css">                  
+
+         .contenedor 
+         {                       
+         position: fixed;
+         border-radius: 15px;
+         height: 94px;
+         width: 167px;
+         margin: 0px 135px;     
+         z-index: 2;       
+        }
+         .contenedor img 
+        {    
+         position: fixed;
+         border-radius: 15px;
+         filter: blur(0.1px);
+         height: 94px;
+         width: 167PX;
+         left: 1;
+         transition: opacity 2s ease-in-out;   
+         z-index: 1;        
+        }
+         .contenedor img.top:hover
+        {
+         opacity: 40%;
+        }
+         #topbar 
+        {
+             border-radius: 15px;
+             width: 80%;             
+             background-color: #514E5F;
+             height: 94px;                
+             font-family: 'Pacifico', cursive;
+             position: relative;
+             text-align: center;
+             font-size: 300%;
+             margin: 0px auto;          
+             z-index: 1;                  
+        }
+         #topbarup
+         {
+             width: 100%;
+             margin: 0 auto;
+             background-color: white;
+             height: 20px;
+         }
+         body 
+        {
+             background-color: #ffdd90;
+             background-image: url(https://images6.alphacoders.com/890/thumb-1920-890293.jpg);
+             background-size: 108% 120%;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             margin: 0;
+             padding: 0;
+             font-family: Rubik,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        #titulo 
+        {
+            font-family: 'Pacifico', cursive;
+            position: fixed;
+            text-align: center;
+            font-size: 300%;
+            margin-top: 0.5px;            
+        }
+        #fandom
+        {
+            width: ;
+            height: 20px;
+            float: left;
+            padding-right: 114px;
+        }
+        #Sign-in 
+        {
+            width: ;
+            height: 20px; 
+            margin-left: 10px;
+        }
+        .Logosign 
+        {
+            float: left;
+            border-left: 2px gray solid;
+            height: 100%;
+            margin-left: 5px;         
+        }
+        #Sign-in-texto
+        {
+            font-weight: bold;
+            font-size: 80%;
+            position: relative;
+            top: -5px;
+            padding-right: 45px;
+            
+            
+        }
+        .topbarmenu
+        {
+            font-weight: bold;
+            font-size: 85%;
+            padding: 3px 10px 0px 10px;
+            height: 17px;   
+            float: right;            
+        }
+        #explora 
+        {
+            float: left;
+            margin-right: 5px;
+        }
+        #foro 
+        {
+            float: left;
+            margin-right: 5px;
+            margin-top: 1px;
+        }
+        a 
+        {
+            text-decoration: none;
+        }
+        #search-box
+        {
+            background-color: #434053;                  
+            font-weight: bold;
+            font-size: 14px;
+            width: 150px;
+            height: 14px;
+            float: left;
+            margin-top: -3px;
+            padding-right: ;
+        }
+        #lupa
+        {
+            margin-top: -1px;
+            margin-left: 10px;
+        }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="topbarup">
+            <a href="https://www.fandom.com/explore-es?uselang=es" target="_blank"><img id= "fandom" src="D:\Curso de desarrollo web completo\imagenes\Descargas\fandom.png"></a>
+
+            <div id="Sign-in" class="Logosign">
+                <img id= "Sign-in" src="D:\Curso de desarrollo web completo\imagenes\Descargas\sign.png">
+                <a href="https://www.fandom.com/signin?uselang=es&redirect=https%3A%2F%2Frezero.fandom.com%2Fes%2Fwiki%2FBlog%3AEntradas_recientes"><span id="Sign-in-texto">Entrar</span></a>
+            </div>
+
+            <div class="Logosign topbarmenu">
+                <a href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Medios" target="_blank"> Medios</a>
+            </div>
+            
+            <div class="Logosign topbarmenu">                
+                <a href="https://rezero.fandom.com/es/wiki/Categor%C3%ADa:Personajes" target="_blank"> Personajes</a>
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Cronolog%C3%ADa" target="_blank"> Cronologia</a>
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Blog:Entradas_recientes" target="_blank"> Entradas Recientes</a>
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Especial:V%C3%ADdeos" target="_blank"> Videos</a>
+                <img id="explora" src="D:\Curso de desarrollo web completo\imagenes\recortes\explora.png">
+            </div>
+            <div class="Logosign topbarmenu">
+                
+                <a href="https://rezero.fandom.com/es/wiki/Especial:Foro" target="_blank"> Foro</a>
+                <img id="foro" src="D:\Curso de desarrollo web completo\imagenes\recortes\FORO.png">
+            </div>
+
+            <div class="logosing topbarmenu">
+                <input type="text" id="search-box" value="search">
+                <input type="image" id="lupa" src="D:\Curso de desarrollo web completo\imagenes\recortes\lupa.png">
+            </div>
+
+            
+
+
+        </div>
+
+
+
+        <div> </div>
+        <div class="contenedor">
+            <a href="https://rezero.fandom.com/es/wiki/Rem" target="_blank"> <img src="D:\Curso de desarrollo web completo\imagenes\Descargas\Wiki.png"/> 
+            <img class="top" src="https://vignette.wikia.nocookie.net/rezero/images/e/ea/Rem_motivando_a_Subaru.gif/revision/latest?cb=20170809212028&path-prefix=es" />
+        </a>
+        
+        </div>
+        <h1 id="topbar"><strong>RulAnime</strong></h1>
+        
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
